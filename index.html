@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button class="light-color" data-action="clear">AC</button>
+            <button class="light-color" data-value="(">(</button>
+            <button class="light-color" data-value=")">)</button>
+            <button class="operator-color" data-value="÷">÷</button>
+            <button class="dark-color" data-value="7">7</button>
+            <button class="dark-color" data-value="8">8</button>
+            <button class="dark-color" data-value="9">9</button>
+            <button class="operator-color" data-value="×">×</button>
+            <button class="dark-color" data-value="4">4</button>
+            <button class="dark-color" data-value="5">5</button>
+            <button class="dark-color" data-value="6">6</button>
+            <button class="operator-color" data-value="-">-</button>
+            <button class="dark-color" data-value="1">1</button>
+            <button class="dark-color" data-value="2">2</button>
+            <button class="dark-color" data-value="3">3</button>
+            <button class="operator-color" data-value="+">+</button>
+            <button class="dark-color" data-action="backspace">DEL</button>
+            <button class="dark-color" data-value="0">0</button>
+            <button class="dark-color" data-value=".">.</button>
+            <button class="operator-color equal" data-action="calculate">=</button>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
