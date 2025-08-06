@@ -30,7 +30,15 @@ buttons.forEach(button => {
                 const expression = display.value
                 .replace(/×/g, '*')
                 .replace(/÷/g, '/');
-                display.value = eval(expression);
+
+                
+                let result = eval(expression);
+
+                if (result % 1 !== 0) {
+                    result = result.toFixed(3);
+                }
+
+                display.value = result;
             }
             catch{
                 display.value = 'Error';
